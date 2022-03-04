@@ -1,11 +1,8 @@
-
 var today = moment();
-$('.live-time').text(today.format("dddd, MMM Do YYYY, h:mm:ss a"));
-
-function updateTime() {
+$(".live-time").text(today.format("dddd, MMMM Do YYYY, h:mm:ss a"));
+ 
+function time() {
     var today = moment();
-    $('.live-time').text(today.format("dddd, MMM Do YYYY, h:mm:ss a"));
+    $(".live-time").text(today.format("dddd, MMMM Do YYYY, h:mm:ss a"));
 }
-
-setInterval(updateTime, 1000);
-
+setInterval(time, 1000);
